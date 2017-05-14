@@ -36,6 +36,30 @@ exports.seed = function(knex, Promise) {
       image_url: 'https://images-na.ssl-images-amazon.com/images/I/81cJChEQjSL.jpg'
     }),
     knex('books').insert({
+      title: 'Sword of the Lictor',
+      author: 'Gene Wolfe',
+      year: 1981,
+      genre: 'dystopian fiction',
+      description: "Having completed the journey he was sent upon when he was exiled from the Citadel, Severian takes up his position as the Lictor (or Master of Chains) of the city of Thrax. His lover Dorcas falls into depression, in part because of her position as the partner of a reviled and feared figure in a strange city. She is also becoming increasingly upset by her mysterious past, and convinced that she must unravel its secrets, however disturbing they may turn out to be.",
+      image_url: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b5/TheSwordOfTheLictor.jpg/220px-TheSwordOfTheLictor.jpg'
+    }),
+    knex('books').insert({
+      title: 'A Storm of Swords',
+      author: 'George RR Martin',
+      year: 2000,
+      genre: 'fantasy',
+      description: "A Storm of Swords picks up the story slightly before the end of its predecessor, A Clash of Kings. The Seven Kingdoms of Westeros are still in the grip of the War of the Five Kings,[6] wherein Joffrey Baratheon and Stannis Baratheon compete for the Iron Throne while Robb Stark and Balon Greyjoy declare their independance. Meanwhile, a large host of wildlings approach the Wall under the leadership of Mance Rayder, the self-proclaimed 'King Beyond the Wall', with only the undermanned Night's Watch in opposition. Finally, Daenerys Targaryen approaches Pentos.",
+      image_url: 'http://georgerrmartin.com/gallery/art/swords05b.jpg'
+    }),
+    knex('books').insert({
+      title: 'Great Expectations',
+      author: 'Charles Dickens',
+      year: 1861,
+      genre: 'fantasy',
+      description: "On Christmas Eve, around 1812,[11] Pip, an orphan who is about seven years old, encounters an escaped convict in the village churchyard, while visiting the graves of his parents and siblings. Pip now lives with his abusive elder sister and her kind husband Joe Gargery, a blacksmith. The convict scares Pip into stealing food and a file. Early on Christmas morning Pip returns with the file, a pie and brandy. During Christmas dinner, at the moment Pip's theft is about to be discovered, soldiers arrive and ask Joe to repair some shackles. Joe and Pip accompany them as they recapture the convict who is fighting with another escaped convict. The first convict confesses to stealing food from the smithy.",
+      image_url: 'https://s-media-cache-ak0.pinimg.com/736x/2b/09/88/2b09889e3262e42c6e30b9c3d7b5a18d.jpg'
+    }),
+    knex('books').insert({
       title: 'Shane',
       author: 'Jack Schaefer',
       year: 1949,
