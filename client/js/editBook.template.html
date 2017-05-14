@@ -1,0 +1,31 @@
+<div class="editBook" ng-click="$event.stopPropagation()">
+  <form ng-submit="$ctrl.editBook()">
+    <div>
+      <label class="control-label">title</label>
+      <input type="text" class="form-control"
+      ng-model='$ctrl.selectedBook.value.data[0].title'>
+    </div>
+    <div>
+      <label>author</label>
+      <input type="text" class="form-control" ng-model="     $ctrl.selectedBook.value.data[0].author">
+    </div>
+    <div>
+      <label>year</label>
+        <input type="text" class="form-control" ng-model="     $ctrl.selectedBook.value.data[0].year">
+    </div>
+    <div>
+      <label>genre</label>
+      <input type="text" class="form-control" ng-model="    $ctrl.selectedBook.value.data[0].genre">
+    </div>
+    <div>
+      <label class="help-text">description</label>
+      <textarea class="form-control" ng-model="  $ctrl.selectedBook.value.data[0].description">
+      </textarea>
+    </div>
+    <div>
+      <label>image url</label>
+      <input type="text" class="form-control" ng-model="$ctrl.selectedBook.value.data[0].image_url">
+    </div>
+    <input type="submit" class="btn btn-primary">
+  </form>
+</div>

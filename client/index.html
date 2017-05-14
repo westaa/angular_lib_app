@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>Angular Libary</title>
+  <link rel="stylesheet" type="text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script src="https://unpkg.com/angular-ui-router@1.0.0-beta.3/release/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="jwt.decode.js"></script>
+  <script type="text/javascript" src="./js/app.component.js"></script>
+  <script type="text/javascript" src="./js/browse.component.js"></script>
+  <script type="text/javascript" src="./js/home.component.js"></script>
+  <script type="text/javascript" src="./js/bookDetailModal.component.js"></script>
+  <script type="text/javascript" src="./js/login.component.js"></script>
+  <script type="text/javascript" src="./js/register.component.js"></script>
+  <script type="text/javascript" src="./js/dashboard.component.js"></script>
+  <script type="text/javascript" src="./js/mybooks.component.js"></script>
+  <script type="text/javascript" src="./js/addBook.component.js"></script>
+  <script type="text/javascript" src="./js/editBook.component.js"></script>
+  <script type="text/javascript" src="./js/services/apiService.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body name="test" id="body" ng-click="$root.goHome()">
+
+  <ui-view></ui-view>
+
+</body>
+</html>

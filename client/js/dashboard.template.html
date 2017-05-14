@@ -1,0 +1,12 @@
+<aside class="dashboard">
+  <h4>Welcome to Alexandria, {{ $root.username }}!</h4>
+  <a ui-sref="app.dashboard.mybooks">
+    <input type="button" class="btn btn-info" value="My Books">
+  </a>
+  <input type="button" class="btn btn-info" value="Add Book" ui-sref="app.dashboard.addBook">
+  <input type="button" class="btn btn-info" value="Search">
+</aside>
+
+<div>
+  <ui-view></ui-view>
+</div>

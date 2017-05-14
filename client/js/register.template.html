@@ -1,0 +1,14 @@
+<br>
+<br>
+
+<div class="register" ng-click="$event.stopPropagation()">
+  <form ng-submit="$ctrl.register()">
+    <p class="help-block bg-danger" ng-show="$ctrl.error">
+      {{ $ctrl.error }}
+    </p>
+    <input type="text" class="form-control" placeholder="username" ng-model="$ctrl.username">
+    <input type="text" class="form-control" placeholder="password" ng-model="$ctrl.password">
+    <input type="email" class="form-control" placeholder="email" ng-model="$ctrl.email">
+    <input type="submit" class="btn btn-primary" value="register">
+  </form>
+</div>

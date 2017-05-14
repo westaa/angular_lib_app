@@ -1,0 +1,17 @@
+<nav class="navbar navbar-default">
+  <div>
+    <div>
+      <a class="navbar-brand" ng-click="$root.goHome($event)"><img ng-src="http://vignette1.wikia.nocookie.net/cityville/images/a/ac/Lighthouse_Of_Alexandria-SW.png/revision/latest?cb=20120716230319"></a>
+    </div>
+    <div ng-hide="$root.username">
+      <a class="navbar-brand" ui-sref="app.browse"><h3>Browse</h3></a>
+      <a class="navbar-brand" ui-sref="app.login"><h3>Login</h3></a>
+      <a class="navbar-brand" ui-sref="app.register"><h3>Register</h3></a>
+    </div>
+    <div ng-show="$root.username">
+      <a class="navbar-brand" ng-click="$ctrl.logout()"><h3>Logout</h3></a>
+    </div>
+  </div>
+</nav>
+
+    <ui-view></ui-view>

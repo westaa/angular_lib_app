@@ -1,0 +1,11 @@
+<br>
+<br>
+<div class='login'  ng-click="$event.stopPropagation()">
+  <form ng-submit="$ctrl.login()">
+    <h4 ng-show="$ctrl.error" class="bg-danger"> {{ $ctrl.error }} </h4>
+    <input type="text" placeholder="username" ng-model="$ctrl.username"
+    class="form-control" name="username">
+    <input type="text" placeholder="password" ng-model="$ctrl.password" class="form-control" name="password">
+    <input type="submit" class="btn btn-primary" value="login">
+  </form>
+</div>

@@ -1,0 +1,21 @@
+<div class="help-block text-center" ng-click="$ctrl.cancelClose($event)">
+
+  <div class="text-center">
+
+    <h1> {{ $ctrl.resolve.selectedBook.title}} </h1>
+    <h4>by {{ $ctrl.resolve.selectedBook.author }}</h4>
+    <label> Year: {{ $ctrl.resolve.selectedBook.year }} </label>
+
+    <br>
+
+    <label> genre: {{ $ctrl.resolve.selectedBook.genre }} </label>
+    <hr>
+    <text> {{ $ctrl.resolve.selectedBook.description }} </text>
+
+  </div>
+
+<hr>
+
+<img height="330px" width="220px" ng-src="{{ $ctrl.resolve.selectedBook.image_url }}" alt="Book Picture Not Found" >
+
+</div>

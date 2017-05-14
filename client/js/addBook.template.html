@@ -1,0 +1,12 @@
+<div class="addBook" ng-click="$event.stopPropagation()">
+  <form ng-submit="$ctrl.addBook()">
+    <input type="text" class="form-control" ng-model="$ctrl.title" placeholder='title'>
+    <input type="text" class="form-control" ng-model="$ctrl.author" placeholder='author'>
+    <input type="text" class="form-control" ng-model="$ctrl.genre" placeholder='genre'>
+    <input type="number" class="form-control" ng-model="$ctrl.year" placeholder='year'>
+    <textarea class="form-control" ng-model="$ctrl.description" placeholder='description'>
+    </textarea>
+    <input type="text" class="form-control" ng-model="$ctrl.image_url" placeholder='image Url'>
+    <input type="submit" class="btn btn-primary" placeholder='title'>
+  </form>
+</div>

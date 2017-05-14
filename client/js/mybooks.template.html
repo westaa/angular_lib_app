@@ -1,0 +1,17 @@
+<div class="mybooks" ng-click="$event.stopPropagation()">
+  <h6 class="text-left"><a ui-sref="app.dashboard.addBook">add book</a></h6>
+  <h4> {{ $root.username }}'s books</h4>
+  <section>
+    <div ng-repeat="book in $ctrl.myBooks.value.data">
+      <nav>
+        <input type="button" class="btn btn-danger btn-xs" value="delete" ng-click="$ctrl.delete(book.book_id)">
+        <a ui-sref="app.dashboard.edit({id: {{book.book_id}} })">      <input type="button" class="btn btn-info btn-xs" value="edit"></a>
+      </nav>
+      <h6><a ng-click="$ctrl.openComponentModal(book)">{{ book.title }}</a></h6>
+      <h6>by {{ book.author }}</h6>
+      <img ng-click="$ctrl.openComponentModal(book)" ng-src="{{ book.image_url }}" alt="Book Cover not Found" alt="" height="120px" width="80px" class="text-center">
+    </div>
+  </section>
+
+
+</div>

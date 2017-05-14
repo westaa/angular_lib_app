@@ -1,0 +1,17 @@
+<h1 class="text-center alexandria">All Available Books</h1>
+<section class="browse" ng-click="$event.stopPropagation()">
+  <h4><a ui-sref="app.browse"></a></h4>
+  <div ng-repeat="book in $ctrl.books track by $index">
+    <h6 class="text-center"><a
+      ng-click="$ctrl.openComponentModal($ctrl.books[$index])"
+      >
+      {{ book.title }}
+    </a></h6>
+    <section>
+      <img ng-click="$ctrl.openComponentModal($ctrl.books[$index])" ng-src="{{book.image_url}}" alt="" height="120px" width="80px" class="text-center">
+    </section>
+    <h6 class="text-center">
+      {{ book.author }}
+    </h6>
+  </div>
+</section>

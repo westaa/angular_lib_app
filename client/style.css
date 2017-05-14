@@ -1,0 +1,207 @@
+body{       background-image:url('/images/alexandria.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 50px;
+    }
+a {
+  cursor: pointer;
+}
+a img {
+  height: 60px;
+  width: 60px;
+  margin-top: -6px;
+}
+.navbar{
+  background: #FFFFF3;
+  height: 80px;
+  width: 100%}
+
+nav div{
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;}
+nav div h3 {
+  margin-top: 12px;
+}
+.padleft{
+  margin-left: 120px;
+}
+.browse {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px;
+
+}
+.browse div {
+  border: solid thin black;
+  width: 17%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.browse h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.alexandria{
+  color: grey;
+}
+div.help-block {
+  padding: 20px;
+  padding-top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+div.help-block img {
+  margin-top: 30px;
+  padding-bottom: auto;
+  margin-left: 17px;
+}
+.login {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 40%;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+.login input {
+  margin-top: 10px;
+}
+
+.register {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 40%;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+}
+.register form {
+  display: flex;
+  flex-direction: column;
+}
+.register form input {
+  margin-top: 10px;
+}
+div.dark-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+aside.dashboard {
+  width: 20%;
+  border: 1px solid black;
+  background: #FFFFF3;
+  float: left;
+  margin-left: 1.5%;
+  height: 60vh;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  margin-top:auto;
+  margin-bottom: auto;
+  flex-direction: column;
+}
+aside.dashboard input {
+  margin-top: 5px;
+  width: 100%;
+}
+.mybooks {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 75%;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 23%
+}
+.mybooks section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.mybooks section div {
+  margin-right: 20px;
+  border: solid thin black;
+  width: 17%;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.addBook {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 60%;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 30%
+}
+.addBook input, .addBook textarea {
+  margin-top: 5px;
+}
+.editBook {
+  margin-left: auto;
+  margin-right: auto;
+  background: #FFFFF3;
+  width: 60%;
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  border-radius: 3px;
+  margin-left: 30%;
+}
+.editBook form {
+  display: flex;
+  flex-direction: column;
+}
+.editBook form div input.form-control {
+  margin-bottom: 10px;
+  width: 80%;
+  float: right;
+}
+.editBook form div textarea {
+  margin-bottom: 10px;
+  width: 80%;
+  float: right;
+}
+.editBook form div label {
+  margin-top: 1%;
+}
+.editBook form div textarea {
+  height: 80px;
+}
