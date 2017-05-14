@@ -24,6 +24,9 @@ app.set('views', __dirname+'/client');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
+app.get('/', function (req, res, next) {
+  res.render('index.html')
+});
 app.get('*', function (req, res, next) {
   res.render('index.html')
 });
