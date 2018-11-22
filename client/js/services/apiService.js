@@ -25,6 +25,12 @@ function($location, $http, $state) {
       return $http.post('/api/register', user);
     },
 
+    isAuthorized: function (token) {
+      reqBody = {};
+      reqBody.jwt = token;
+      return $http.post('/api/auth', reqBody);
+    },
+
     editBook: function (id) {
       return $http.get('api/editBook/' + id)
     },

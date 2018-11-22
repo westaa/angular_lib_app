@@ -59,6 +59,12 @@ app.config(function($urlRouterProvider, $stateProvider, $locationProvider) {
     url: '/editBook/?id',
     component: 'editBook'
   })
-
   // console.log($rootScope);
 });
+
+app.run(function(apiService, $state) {
+  if (!localStorage.jwt || !apiService.isAuthorized(localStorage.jwt)){
+     $state.go('app.home');
+  }
+  return;
+})

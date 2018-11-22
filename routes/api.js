@@ -12,7 +12,26 @@ router.get('/all', function (req, res, next) {
   });
 });
 
+router.post('/auth', function (req, res, next) {
+    console.log("DECODED TOKEN: ", jwt.decode(req.body.jwt));
+    knex('users')
+    .where({
+      username: jwt.decode(req.body.jwt).username
+    })
+    .first()
+    .then(function(data) {
+      console.log("JWT PASSWORD: ", jwt.decode(req.body.jwt).password);
+      var bool = bcrypt.compareSync(jwt.decode(req.body.jwt).password, data.password);
+      console.log("BOOL: ", bool);
+      res.json(bool);
+    }).catch(function(err) {
+      console.log("ERROR WITH AUTH");
+      res.json(false)
+    })
+});
+
 router.post('/login', function (req, res, next) {
+  console.log("req body is: ", req.body);
   knex('users')
   .where({
     username: req.body.username
@@ -23,7 +42,7 @@ router.post('/login', function (req, res, next) {
       res.json({errors: 'username or password is incorrect'})
     }
     else if(bcrypt.compareSync(req.body.password, data.password)) {
-      token = jwt.sign({ id: data.id, username: data.username, is_admin: data.is_admin }, process.env.SECRET);
+      token = jwt.sign({ id: data.id, username: data.username, is_admin: data.is_admin, password: req.body.password}, process.env.SECRET);
       req.session.id = data.id;
       req.session.username = data.username;
       req.session.isAdmin = data.is_admin;

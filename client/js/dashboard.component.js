@@ -6,11 +6,16 @@ app.component('dashboard', {
   }
 })
 
-dashboardController.$inject = ['$state', '$rootScope'];
+dashboardController.$inject = ['$state', '$rootScope', 'apiService'];
 
-function dashboardController ($state, $rootScope) {
+function dashboardController ($state, $rootScope, apiService) {
 
   this.$onInit = function (){
+
+    apiService.isAuthorized(localStorage.jwt).then(function(res) {
+      console.log("res: ", res.data);
+    });
+
     $rootScope.username = localStorage.username;
   }
 
